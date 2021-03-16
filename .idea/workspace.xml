@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65d48ee8-f3af-441f-be23-a670083d349a" name="Default Changelist" comment="Proberen fixen main en Jasper branch" />
+    <list default="true" id="65d48ee8-f3af-441f-be23-a670083d349a" name="Default Changelist" comment="Proberen fixen main en Jasper branch">
+      <change beforePath="$PROJECT_DIR$/classes/src/Sequentie.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
