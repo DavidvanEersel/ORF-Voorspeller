@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand />
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65d48ee8-f3af-441f-be23-a670083d349a" name="Default Changelist" comment="zoekorf functie gemaakt&#10;Margo en Jasper">
-      <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" afterDir="false" />
+    <list default="true" id="65d48ee8-f3af-441f-be23-a670083d349a" name="Default Changelist" comment="Javadoc toegevoegd">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/src/Test_main.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Test_main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615903349318</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Javadoc toegevoegd">
+      <created>1615903772692</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615903772692</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,7 +151,8 @@
     <MESSAGE value="Proberen fixen main en Jasper branch" />
     <MESSAGE value="Test main toegevoegd" />
     <MESSAGE value="zoekorf functie gemaakt&#10;Margo en Jasper" />
-    <option name="LAST_COMMIT_MESSAGE" value="zoekorf functie gemaakt&#10;Margo en Jasper" />
+    <MESSAGE value="Javadoc toegevoegd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Javadoc toegevoegd" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1615900086485">
@@ -148,30 +171,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1615899987739" />
-    <state width="1317" height="210" key="GridCell.Tab.0.bottom" timestamp="1615990101174">
-      <screen x="1920" y="0" width="1360" height="728" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1615903241140" />
-    <state width="1317" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1615990101174" />
-    <state width="1317" height="210" key="GridCell.Tab.0.center" timestamp="1615990101174">
-      <screen x="1920" y="0" width="1360" height="728" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1615903241140" />
-    <state width="1317" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1615990101174" />
-    <state width="1317" height="210" key="GridCell.Tab.0.left" timestamp="1615990101174">
-      <screen x="1920" y="0" width="1360" height="728" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1615903241140" />
-    <state width="1317" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1615990101174" />
-    <state width="1317" height="210" key="GridCell.Tab.0.right" timestamp="1615990101174">
-      <screen x="1920" y="0" width="1360" height="728" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1615903241140" />
-    <state width="1317" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1615990101174" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1615900578929">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1615904702568">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1615900578929" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1615904702568" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1615904702568">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1615904702568" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1615904702568">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1615904702568" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1615904702568">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1615904702568" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1615903777077">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1615903777077" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1615900000876">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

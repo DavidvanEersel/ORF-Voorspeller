@@ -6,6 +6,8 @@ public class Test_main {
 
         Sequentie s1 = new Sequentie("aatgcatgccaaatgattag", "header");
 
+        System.out.println(s1.getSequentie());
+
 
     }
 
