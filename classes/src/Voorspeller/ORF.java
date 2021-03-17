@@ -1,5 +1,11 @@
 package Voorspeller;
 
+/**
+ * ORF class
+ *
+ * @author Margo en Jasper
+ */
+
 public class ORF {
     private String orf;
     private int readingFrame;
@@ -8,7 +14,7 @@ public class ORF {
     private int lengte;
     private String parentHeader;
 
-    public ORF (String orf, int readingFrame, int startPositie, String parentHeader){
+    public ORF(String orf, int readingFrame, int startPositie, String parentHeader) {
         setOrf(orf);
         setReadingFrame(readingFrame);
         setStartPositie(startPositie);
@@ -46,7 +52,7 @@ public class ORF {
     }
 
     public void setStopPositie() {
-        this.stopPositie = startPositie + lengte -1;
+        this.stopPositie = startPositie + lengte - 1;
     }
 
     public int getLengte() {
@@ -64,7 +70,6 @@ public class ORF {
     public void setParentHeader(String parentHeader) {
         this.parentHeader = parentHeader;
     }
-
 
 
 }
