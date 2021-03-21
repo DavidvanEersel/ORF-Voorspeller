@@ -25,13 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="commit">
+    <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="GUI en Sequentie gekoppeld (readFile kan verbeterd worden)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/ORF.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/ORF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Voorspeller/ORF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Voorspeller/ORF.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,19 +72,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GUI" />
@@ -118,7 +102,8 @@
       <workItem from="1616321462896" duration="67000" />
       <workItem from="1616321545052" duration="533000" />
       <workItem from="1616322080557" duration="9819000" />
-      <workItem from="1616349369885" duration="9249000" />
+      <workItem from="1616349369885" duration="9900000" />
+      <workItem from="1616359724374" duration="1387000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1616321925683</created>
@@ -127,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616321925683</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="GUI en Sequentie gekoppeld (readFile kan verbeterd worden)">
+      <created>1616358908829</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616358908829</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,29 +148,46 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="GUI en Sequentie gekoppeld (readFile kan verbeterd worden)" />
+    <option name="LAST_COMMIT_MESSAGE" value="GUI en Sequentie gekoppeld (readFile kan verbeterd worden)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="779" y="312" width="424" height="491" key="FileChooserDialogImpl" timestamp="1616338557741">
       <screen x="72" y="29" width="1848" height="1051" />
     </state>
     <state x="779" y="312" width="424" height="491" key="FileChooserDialogImpl/72.29.1848.1051@72.29.1848.1051" timestamp="1616338557741" />
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1616358452481">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1616360768582">
       <screen x="72" y="29" width="1848" height="1051" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.29.1848.1051@72.29.1848.1051" timestamp="1616358452481" />
-    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1616358452480">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.29.1848.1051@72.29.1848.1051" timestamp="1616360768582" />
+    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1616360768581">
       <screen x="72" y="29" width="1848" height="1051" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.center/72.29.1848.1051@72.29.1848.1051" timestamp="1616358452480" />
-    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1616358452480">
+    <state width="1802" height="275" key="GridCell.Tab.0.center/72.29.1848.1051@72.29.1848.1051" timestamp="1616360768581" />
+    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1616360768581">
       <screen x="72" y="29" width="1848" height="1051" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.left/72.29.1848.1051@72.29.1848.1051" timestamp="1616358452480" />
-    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1616358452480">
+    <state width="1802" height="275" key="GridCell.Tab.0.left/72.29.1848.1051@72.29.1848.1051" timestamp="1616360768581" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1616360768582">
       <screen x="72" y="29" width="1848" height="1051" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.right/72.29.1848.1051@72.29.1848.1051" timestamp="1616358452480" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right/72.29.1848.1051@72.29.1848.1051" timestamp="1616360768582" />
+    <state width="1802" height="339" key="GridCell.Tab.1.bottom" timestamp="1616359272681">
+      <screen x="72" y="29" width="1848" height="1051" />
+    </state>
+    <state width="1802" height="339" key="GridCell.Tab.1.bottom/72.29.1848.1051@72.29.1848.1051" timestamp="1616359272681" />
+    <state width="1802" height="339" key="GridCell.Tab.1.center" timestamp="1616359272681">
+      <screen x="72" y="29" width="1848" height="1051" />
+    </state>
+    <state width="1802" height="339" key="GridCell.Tab.1.center/72.29.1848.1051@72.29.1848.1051" timestamp="1616359272681" />
+    <state width="1802" height="339" key="GridCell.Tab.1.left" timestamp="1616359272680">
+      <screen x="72" y="29" width="1848" height="1051" />
+    </state>
+    <state width="1802" height="339" key="GridCell.Tab.1.left/72.29.1848.1051@72.29.1848.1051" timestamp="1616359272680" />
+    <state width="1802" height="339" key="GridCell.Tab.1.right" timestamp="1616359272681">
+      <screen x="72" y="29" width="1848" height="1051" />
+    </state>
+    <state width="1802" height="339" key="GridCell.Tab.1.right/72.29.1848.1051@72.29.1848.1051" timestamp="1616359272681" />
     <state x="627" y="317" width="728" height="482" key="MultipleFileMergeDialog" timestamp="1616321963331">
       <screen x="72" y="29" width="1848" height="1051" />
     </state>
@@ -187,10 +196,10 @@
       <screen x="72" y="29" width="1848" height="1051" />
     </state>
     <state x="479" y="132" width="1024" height="852" key="SettingsEditor/72.29.1848.1051@72.29.1848.1051" timestamp="1615912728815" />
-    <state x="591" y="290" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1616321936197">
+    <state x="591" y="290" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1616358918358">
       <screen x="72" y="29" width="1848" height="1051" />
     </state>
-    <state x="591" y="290" width="800" height="535" key="Vcs.Push.Dialog.v2/72.29.1848.1051@72.29.1848.1051" timestamp="1616321936197" />
+    <state x="591" y="290" width="800" height="535" key="Vcs.Push.Dialog.v2/72.29.1848.1051@72.29.1848.1051" timestamp="1616358918358" />
     <state x="172" y="129" width="1648" height="851" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1615912951112">
       <screen x="72" y="29" width="1848" height="1051" />
     </state>

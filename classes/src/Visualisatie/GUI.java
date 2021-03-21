@@ -12,6 +12,7 @@ import java.nio.file.StandardOpenOption;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -65,36 +66,30 @@ public class GUI extends JFrame implements ActionListener {
      * Deze methode leest het bestand met sequenties in fasta format in en maakt hier een sequentie object van.
      */
     public void readFile() {
-        // Voeg > toe aan het bestand
-        try {
-            Files.write(Paths.get(nameField.getText()), "\n>".getBytes(), StandardOpenOption.APPEND);
-        }catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        // Maak headers en seqs
-        ArrayList<String> headers = new ArrayList<>();
-        ArrayList<String> seqs = new ArrayList<>();
-        StringBuilder seq = new StringBuilder();
+        // Lees het bestand in
+        StringBuilder inhoud = new StringBuilder();
         try (Scanner sc = new Scanner(new File(nameField.getText()))) {
             while (sc.hasNextLine()) {
                 String line = sc.nextLine().trim();
                 if (line.startsWith(">")) {
-                    headers.add(line);
-                    seqs.add(seq.toString());
-                    seq = new StringBuilder();
+                    inhoud.append("seq_header_seperator");
+                    inhoud.append(line);
+                    inhoud.append("seq_header_seperator");
                 } else {
-                    seq.append(line);
+                    inhoud.append(line);
+                }
+            }
+
+            // Maak de sequentie objecten
+            String[] lines = inhoud.toString().split("seq_header_seperator");
+            ArrayList<String> lines2 = new ArrayList<>(Arrays.asList(lines));
+            for (String line : lines){
+                if (line.startsWith(">")){
+                    new Sequentie(lines2.get(lines2.indexOf(line) + 1), lines2.get(lines2.indexOf(line)));
                 }
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }
-
-        // Maak sequentie objecten
-        seqs.remove(0);
-        for (int i = 0; i < seqs.size(); i++){
-            new Sequentie(seqs.get(i), headers.get(i));
         }
     }
 
