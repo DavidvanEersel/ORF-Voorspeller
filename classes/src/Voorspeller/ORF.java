@@ -1,5 +1,11 @@
 package Voorspeller;
 
+/**
+ * ORF class
+ *
+ * @author Margo en Jasper
+ */
+
 public class ORF {
     private String orf;
     private int readingFrame;
@@ -64,7 +70,4 @@ public class ORF {
     public void setParentHeader(String parentHeader) {
         this.parentHeader = parentHeader;
     }
-
-
-
 }
