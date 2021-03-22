@@ -1,5 +1,7 @@
 package Voorspeller;
 
+
+
 /**
  * ORF class
  *
@@ -21,6 +23,7 @@ public class ORF {
         setLengte();
         setStopPositie();
         setParentHeader(parentHeader);
+        //Databasehandler.setResults();
     }
 
     public String getOrf() {

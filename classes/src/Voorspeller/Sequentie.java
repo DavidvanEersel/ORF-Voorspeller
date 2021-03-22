@@ -1,5 +1,7 @@
 package Voorspeller;
 
+import Database.Databasehandler;
+
 import java.util.ArrayList;
 
 /**
@@ -30,10 +32,7 @@ public class Sequentie {
         if (this.isCheckDNA() && !this.isCheckInDatabase()) {
             //TODO voeg toe aan de database
         }
-
-        for (ORF orf : zoekORF(sequentie.toUpperCase(), header)) {
-            //TODO voeg toe aan de database
-        }
+        Databasehandler.setResults(zoekORF(sequentie.toUpperCase(), header), this.getSequentie());
     }
 
 

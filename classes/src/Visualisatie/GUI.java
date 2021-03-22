@@ -98,7 +98,7 @@ public class GUI extends JFrame implements ActionListener {
      * Deze methode leest de sequentie opgegeven in het invulveld en maakt hier een sequentie object van.
      */
     public void readTekstveld() {
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd_HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
         new Sequentie(invulveld.getText(), ">" + dtf.format(now));
     }
