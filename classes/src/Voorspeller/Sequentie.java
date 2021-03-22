@@ -1,5 +1,7 @@
 package Voorspeller;
 
+import Database.Databasehandler;
+
 import java.util.ArrayList;
 
 /**
@@ -22,12 +24,20 @@ public class Sequentie {
         setHeader(header);
         setLengte();
         setCheckDNA();
-        System.out.println(zoekORF(sequentie.toUpperCase(), header));
 
+        System.out.println(this.getHeader());
+        System.out.println(this.getSequentie());
+        System.out.println(this.isCheckDNA());
+        System.out.println(zoekORF(sequentie.toUpperCase(), header));
+        if (this.isCheckDNA() && !this.isCheckInDatabase()) {
+            //TODO voeg toe aan de database
+        }
+        Databasehandler.setResults(zoekORF(sequentie.toUpperCase(), header), this.getSequentie());
     }
 
+
     /**
-     * Deze functie is gemaakt om ORF's te zoeken in een sequentie.
+     * Deze methode is gemaakt om ORF's te zoeken in een sequentie.
      *
      * @param seq  is de sequentie waar je ORF's van wilt vinden
      * @param head is de header van de sequentie
@@ -62,8 +72,6 @@ public class Sequentie {
             }
         }
         return gev_orf;
-
-
     }
 
     public String getSequentie() {
@@ -107,6 +115,4 @@ public class Sequentie {
         //query voor check in database nog inbouwen
         this.checkInDatabase = checkInDatabase;
     }
-
 }
-

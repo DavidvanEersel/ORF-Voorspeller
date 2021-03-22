@@ -1,0 +1,6 @@
+>seq1
+aatgcatgccaaatgattag
+gggggggggggggggggggg
+
+>seq2
+aatgcatgcccccccccccctag
