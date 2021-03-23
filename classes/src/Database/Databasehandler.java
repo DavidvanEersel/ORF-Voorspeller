@@ -12,30 +12,34 @@ public class Databasehandler {
 
     public static void setResults(ArrayList<ORF> orfs, String sequentie) {
         for (ORF orf : orfs) {
-            String pHeader = orf.getParentHeader() + " ";
+            String pHeader = orf.getParentHeader().replace(" ","_") + " ";
             pSeq = sequentie + " ";
             String seqORF = orf.getOrf() + " ";
             String oStart = orf.getStartPositie() + " ";
             String oStop = orf.getStopPositie() + " ";
             int oReadingFrame = orf.getReadingFrame();
-
             try {
                 String cmd = "bash /home/daaf/IdeaProjects/ORF-Voorspeller/classes/src/Database/setResults.sh "
-                        + pHeader.replace(" ", "_") + pSeq + seqORF + oStart + oStop + oReadingFrame;
+                        + pHeader + pSeq + seqORF + oStart + oStop + oReadingFrame;
                 Process process = Runtime.getRuntime().exec(cmd);
+                BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    System.out.println(line);
+                }
                 process.destroy();
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            System.out.println(getResults());
         }
     }
 
 
-    public static ArrayList<String> getResults() {
+    public static ArrayList<String> getResults(String seq) {
+        pSeq = seq;
         ArrayList<String> results = new ArrayList<>();
         try {
-            String cmd = "bash /home/daaf/IdeaProjects/ORF-Voorspeller/classes/src/Database/getResults.sh";
+            String cmd = "bash /home/daaf/IdeaProjects/ORF-Voorspeller/classes/src/Database/getResults.sh " + pSeq;
             Process process = Runtime.getRuntime().exec(cmd);
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
@@ -58,7 +62,7 @@ public class Databasehandler {
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
             while ((line = reader.readLine()) != null) {
-                if(!line.equals("")){
+                if (!line.equals("")) {
                     temp = line;
                 }
             }

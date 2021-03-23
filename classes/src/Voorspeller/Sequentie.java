@@ -1,6 +1,7 @@
 package Voorspeller;
 
 import Database.Databasehandler;
+import Visualisatie.GUI;
 
 import java.util.ArrayList;
 
@@ -29,6 +30,7 @@ public class Sequentie {
 
         if (this.isCheckDNA() && !this.isCheckInDatabase()) {
             Databasehandler.setResults(zoekORF(sequentie.toUpperCase(), header), this.getSequentie());
+            Visualisatie.GUI.OrfVisualisatie(this.getSequentie());
         }else{
             System.out.println("zit al in de db");
         }

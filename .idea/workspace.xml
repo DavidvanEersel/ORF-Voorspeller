@@ -25,16 +25,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="setResults.sh afgemaakt">
-      <change afterPath="$PROJECT_DIR$/classes/src/Database/checkInDatabase.sh" afterDir="false" />
+    <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="van alles aan gepast">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseMaker.sh" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseMaker.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ORFVoorspeller.db" beforeDir="false" afterPath="$PROJECT_DIR$/ORFVoorspeller.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Database/Databasehandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Database/Databasehandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Database/getResults.sh" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Database/getResults.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/ORF.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/ORF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Voorspeller/ORF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Voorspeller/ORF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Database/Databasehandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Database/Databasehandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Database/getResults.sh" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Database/getResults.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +166,7 @@
       <workItem from="1616349369885" duration="9900000" />
       <workItem from="1616359724374" duration="1387000" />
       <workItem from="1616427083567" duration="4926000" />
-      <workItem from="1616488829490" duration="8102000" />
+      <workItem from="1616488829490" duration="10719000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1616321925683</created>
@@ -197,7 +196,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616491686380</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="van alles aan gepast">
+      <created>1616497062957</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616497062957</updated>
+    </task>
+    <task id="LOCAL-00006" summary="van alles aan gepast">
+      <created>1616497173229</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616497173229</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +233,7 @@
     <MESSAGE value="GUI en Sequentie gekoppeld (readFile kan verbeterd worden)" />
     <MESSAGE value="GUI en Sequentie gekoppeld, setResults.sh gemaakt" />
     <MESSAGE value="setResults.sh afgemaakt" />
-    <option name="LAST_COMMIT_MESSAGE" value="setResults.sh afgemaakt" />
+    <MESSAGE value="van alles aan gepast" />
+    <option name="LAST_COMMIT_MESSAGE" value="van alles aan gepast" />
   </component>
 </project>

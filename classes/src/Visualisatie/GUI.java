@@ -1,5 +1,6 @@
 package Visualisatie;
 
+import Database.Databasehandler;
 import Voorspeller.Sequentie;
 
 import javax.swing.*;
@@ -21,14 +22,12 @@ import java.util.Scanner;
 
 public class GUI extends JFrame implements ActionListener {
 
-    private JPanel panel1;
-
+    private static JPanel visualisatie_orf;
     private JButton BladerKnop;
     private JTextField nameField;
     private JTextField invulveld;
     private JRadioButton kiestekst;
     private JRadioButton kiesbestand;
-    private JPanel visualisatie_orf;
 
 
     /**
@@ -110,10 +109,9 @@ public class GUI extends JFrame implements ActionListener {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd_HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
         new Sequentie(invulveld.getText(), ">" + dtf.format(now));
-        OrfVisualisatie(invulveld.getText());
     }
 
-    public void OrfVisualisatie(String seq) {
+    public static void OrfVisualisatie(String seq) {
         Graphics tekenveld = visualisatie_orf.getGraphics();
         tekenveld.drawString("seq",20,17);
         tekenveld.drawString("rf 1",20,27);
@@ -121,7 +119,6 @@ public class GUI extends JFrame implements ActionListener {
         tekenveld.drawString("rf 3",20,47);
         int readframe = 20;
 
-        //String seq = "ATGAAATGAAAAAAAAAAAATTTTTTTGGGGGG";
         int seq_lengt = seq.length();
         tekenveld.setColor(Color.blue);
         tekenveld.fillRect(50, 10, 400, 10);
@@ -129,14 +126,12 @@ public class GUI extends JFrame implements ActionListener {
         tekenveld.drawString("0",50,20);
         tekenveld.drawString(String.valueOf(seq_lengt),430,20);
 
+        ArrayList<String> results = Databasehandler.getResults(seq);
+        System.out.println(results + "Results");
 
-        ArrayList<String> test = new ArrayList<>();
-        test.add("1|ATGAAATGA|3|12|3|1|1|header|ATGAAATGA");
-        test.add("1|ATGAAATGA|2|14|2|1|1|header|ATGAAATTTTGA");
-        test.add("1|ATGAAATGA|0|13|1|1|1|header|ATGAAAGGGTGA");
-
-        for (String data : test) {
+        for (String data : results) {
             String[] info_lijst = data.split("\\|");
+            System.out.println(Arrays.toString(info_lijst) + "info_lijst");
             int pos = Integer.parseInt(info_lijst[2]);
             if (pos != 0) {
                 pos = (pos * 400 / seq_lengt) + 50;
@@ -164,12 +159,7 @@ public class GUI extends JFrame implements ActionListener {
             tekenveld.setColor(Color.black);
             tekenveld.drawString(info_lijst[2],pos,readframe+10);
             tekenveld.drawString(info_lijst[3],pos+lengt-20,readframe+10);
-
-
-
         }
-
-
     }
 
 
