@@ -24,15 +24,15 @@ public class Sequentie {
         setHeader(header);
         setLengte();
         setCheckDNA();
+        setCheckInDatabase();
 
-        System.out.println(this.getHeader());
-        System.out.println(this.getSequentie());
-        System.out.println(this.isCheckDNA());
-        System.out.println(zoekORF(sequentie.toUpperCase(), header));
+
         if (this.isCheckDNA() && !this.isCheckInDatabase()) {
-            //TODO voeg toe aan de database
+            Databasehandler.setResults(zoekORF(sequentie.toUpperCase(), header), this.getSequentie());
+        }else{
+            System.out.println("zit al in de db");
         }
-        Databasehandler.setResults(zoekORF(sequentie.toUpperCase(), header), this.getSequentie());
+
     }
 
 
@@ -111,8 +111,7 @@ public class Sequentie {
         return checkInDatabase;
     }
 
-    public void setCheckInDatabase(boolean checkInDatabase) {
-        //query voor check in database nog inbouwen
-        this.checkInDatabase = checkInDatabase;
+    public void setCheckInDatabase() {
+        this.checkInDatabase = Databasehandler.checkInDatabase(getSequentie());
     }
 }
