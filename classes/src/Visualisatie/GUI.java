@@ -1,4 +1,5 @@
 package Visualisatie;
+
 import Voorspeller.Sequentie;
 
 import javax.swing.*;
@@ -6,9 +7,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -23,11 +21,14 @@ import java.util.Scanner;
 
 public class GUI extends JFrame implements ActionListener {
 
+    private JPanel panel1;
+
     private JButton BladerKnop;
     private JTextField nameField;
     private JTextField invulveld;
     private JRadioButton kiestekst;
     private JRadioButton kiesbestand;
+    private JPanel visualisatie_orf;
 
 
     /**
@@ -50,15 +51,22 @@ public class GUI extends JFrame implements ActionListener {
         groep.add(kiesbestand);
         window.add(kiestekst);
         window.add(kiesbestand);
+
+
         kiesbestand.setText("Om een bestand te verwerken klik hierop");
         kiestekst.setText("Om tekst te verwerken klik hierop");
-        balkPaneel.setPreferredSize(new Dimension(300, 300));
+
         JLabel resultaatZoekterm = new JLabel();
         window.add(invulveld);
         window.add(nameField);
-        window.add(balkPaneel);
         window.add(resultaatZoekterm);
         invulveld.setText("Vul hier je sequentie in. ");
+
+        visualisatie_orf = new JPanel();
+        visualisatie_orf.setPreferredSize(new Dimension(500, 200));
+        visualisatie_orf.setBackground(Color.white);
+        window.add(visualisatie_orf);
+        visualisatie_orf.setVisible(true);
     }
 
 
@@ -83,14 +91,15 @@ public class GUI extends JFrame implements ActionListener {
             // Maak de sequentie objecten
             String[] lines = inhoud.toString().split("seq_header_seperator");
             ArrayList<String> lines2 = new ArrayList<>(Arrays.asList(lines));
-            for (String line : lines){
-                if (line.startsWith(">")){
+            for (String line : lines) {
+                if (line.startsWith(">")) {
                     new Sequentie(lines2.get(lines2.indexOf(line) + 1), lines2.get(lines2.indexOf(line)));
                 }
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
     }
 
 
@@ -101,6 +110,66 @@ public class GUI extends JFrame implements ActionListener {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd_HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
         new Sequentie(invulveld.getText(), ">" + dtf.format(now));
+        OrfVisualisatie(invulveld.getText());
+    }
+
+    public void OrfVisualisatie(String seq) {
+        Graphics tekenveld = visualisatie_orf.getGraphics();
+        tekenveld.drawString("seq",20,17);
+        tekenveld.drawString("rf 1",20,27);
+        tekenveld.drawString("rf 2",20,37);
+        tekenveld.drawString("rf 3",20,47);
+        int readframe = 20;
+
+        //String seq = "ATGAAATGAAAAAAAAAAAATTTTTTTGGGGGG";
+        int seq_lengt = seq.length();
+        tekenveld.setColor(Color.blue);
+        tekenveld.fillRect(50, 10, 400, 10);
+        tekenveld.setColor(Color.black);
+        tekenveld.drawString("0",50,20);
+        tekenveld.drawString(String.valueOf(seq_lengt),430,20);
+
+
+        ArrayList<String> test = new ArrayList<>();
+        test.add("1|ATGAAATGA|3|12|3|1|1|header|ATGAAATGA");
+        test.add("1|ATGAAATGA|2|14|2|1|1|header|ATGAAATTTTGA");
+        test.add("1|ATGAAATGA|0|13|1|1|1|header|ATGAAAGGGTGA");
+
+        for (String data : test) {
+            String[] info_lijst = data.split("\\|");
+            int pos = Integer.parseInt(info_lijst[2]);
+            if (pos != 0) {
+                pos = (pos * 400 / seq_lengt) + 50;
+            } else {
+                pos += 50;
+            }
+            int lengt = (Integer.parseInt(info_lijst[3]) - Integer.parseInt(info_lijst[2])) * 400 / seq_lengt;
+
+            switch (info_lijst[4]) {
+                case "1" -> {
+                    readframe = 20;
+                    tekenveld.setColor(Color.red);
+                }
+                case "2" -> {
+                    tekenveld.setColor(Color.green);
+                    readframe = 30;
+                }
+                case "3" -> {
+                    tekenveld.setColor(Color.yellow);
+                    readframe = 40;
+
+                }
+            }
+            tekenveld.fillRect(pos, readframe, lengt, 10);
+            tekenveld.setColor(Color.black);
+            tekenveld.drawString(info_lijst[2],pos,readframe+10);
+            tekenveld.drawString(info_lijst[3],pos+lengt-20,readframe+10);
+
+
+
+        }
+
+
     }
 
 
@@ -131,6 +200,7 @@ public class GUI extends JFrame implements ActionListener {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 
 
@@ -145,8 +215,11 @@ public class GUI extends JFrame implements ActionListener {
                 | IllegalAccessException ignored) {
         }
         GUI frame = new GUI(); // maakt de frame aan
-        frame.setSize(600, 600); // zet de grootte van het frame
+        frame.setSize(600, 400); // zet de grootte van het frame
         frame.GUI();
         frame.setVisible(true); // geeft de GUI weer
+
     }
+
+
 }
