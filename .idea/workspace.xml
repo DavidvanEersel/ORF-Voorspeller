@@ -26,7 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="GUI en Sequentie gekoppeld (readFile kan verbeterd worden)">
+      <change afterPath="$PROJECT_DIR$/classes/src/Visualisatie/OrfVisualiatie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/src/Database/Databasehandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Database/Databasehandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" afterDir="false" />
     </list>
@@ -34,6 +36,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -58,7 +67,12 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Visualisatie" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GUI">
     <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Visualisatie.GUI" />
       <module name="classes" />
@@ -72,9 +86,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DatabaseMaker.sh" type="ShConfigurationType" temporary="true">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/classes/src/Database/DatabaseMaker.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/classes/src/Database" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GUI" />
+        <item itemvalue="Shell Script.DatabaseMaker.sh" />
       </list>
     </recent_temporary>
   </component>
@@ -152,25 +178,37 @@
     <option name="LAST_COMMIT_MESSAGE" value="GUI en Sequentie gekoppeld (readFile kan verbeterd worden)" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616491263692">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1616491263692" />
     <state x="779" y="312" width="424" height="491" key="FileChooserDialogImpl" timestamp="1616338557741">
       <screen x="72" y="29" width="1848" height="1051" />
     </state>
     <state x="779" y="312" width="424" height="491" key="FileChooserDialogImpl/72.29.1848.1051@72.29.1848.1051" timestamp="1616338557741" />
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1616360768582">
-      <screen x="72" y="29" width="1848" height="1051" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1616496803418">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1616496803418" />
+    <state width="1317" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1616434485913" />
     <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.29.1848.1051@72.29.1848.1051" timestamp="1616360768582" />
-    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1616360768581">
-      <screen x="72" y="29" width="1848" height="1051" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1616496803418">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1616496803418" />
+    <state width="1317" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1616434485912" />
     <state width="1802" height="275" key="GridCell.Tab.0.center/72.29.1848.1051@72.29.1848.1051" timestamp="1616360768581" />
-    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1616360768581">
-      <screen x="72" y="29" width="1848" height="1051" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1616496803418">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1616496803418" />
+    <state width="1317" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1616434485912" />
     <state width="1802" height="275" key="GridCell.Tab.0.left/72.29.1848.1051@72.29.1848.1051" timestamp="1616360768581" />
-    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1616360768582">
-      <screen x="72" y="29" width="1848" height="1051" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1616496803418">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1616496803418" />
+    <state width="1317" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1616434485912" />
     <state width="1802" height="275" key="GridCell.Tab.0.right/72.29.1848.1051@72.29.1848.1051" timestamp="1616360768582" />
     <state width="1802" height="339" key="GridCell.Tab.1.bottom" timestamp="1616359272681">
       <screen x="72" y="29" width="1848" height="1051" />

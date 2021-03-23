@@ -19,7 +19,7 @@ public class Databasehandler {
             int oReadingFrame = orf.getReadingFrame();
 
             try {
-                String cmd = "bash /home/daaf/IdeaProjects/ORF-Voorspeller/classes/src/Database/setResults.sh "
+                String cmd = "bash /setResults.sh "
                         + pHeader + pSeq + seqORF + oStart + oStop + oReadingFrame;
                 Process process = Runtime.getRuntime().exec(cmd);
                 BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
