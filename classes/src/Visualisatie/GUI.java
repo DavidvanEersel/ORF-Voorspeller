@@ -23,6 +23,7 @@ import java.util.Scanner;
 public class GUI extends JFrame implements ActionListener {
 
     private static JPanel visualisatie_orf;
+    private static boolean teken;
     private JButton BladerKnop;
     private JTextField nameField;
     private JTextField invulveld;
@@ -108,11 +109,16 @@ public class GUI extends JFrame implements ActionListener {
     public void readTekstveld() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd_HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
+
         new Sequentie(invulveld.getText(), ">" + dtf.format(now));
     }
 
     public static void OrfVisualisatie(String seq) {
+
+
         Graphics tekenveld = visualisatie_orf.getGraphics();
+
+
         tekenveld.drawString("seq",20,17);
         tekenveld.drawString("rf 1",20,27);
         tekenveld.drawString("rf 2",20,37);
@@ -160,6 +166,8 @@ public class GUI extends JFrame implements ActionListener {
             tekenveld.drawString(info_lijst[2],pos,readframe+10);
             tekenveld.drawString(info_lijst[3],pos+lengt-20,readframe+10);
         }
+        teken = true;
+
     }
 
 
@@ -169,6 +177,12 @@ public class GUI extends JFrame implements ActionListener {
      * @param event als er op een button wordt geklikt.
      */
     public void actionPerformed(ActionEvent event) {
+        if (teken) {
+            visualisatie_orf.removeAll();
+            visualisatie_orf.revalidate();
+            visualisatie_orf.repaint();
+            teken = false;
+        }
         try {
             File selectedFile;
             int reply;
