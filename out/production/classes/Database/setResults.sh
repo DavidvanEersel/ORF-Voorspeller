@@ -5,12 +5,10 @@ oStart=$4
 oStop=$5
 oReadingFrame=$6
 
-
 id_nummer=$(sqlite3 -batch ORFVoorspeller.db "select count(*) from Sequentie;")
 id_nummer=$(($id_nummer+1))
-echo $id_nummer
 
-sqlite3 -batch ORFVoorspeller.db "INSERT INTO Sequentie(id,header, sequentie) VALUES (\"$id_nummer\",\"$pHeader\",\"$pSeq\");"
+sqlite3 -batch ORFVoorspeller.db "INSERT OR IGNORE INTO Sequentie(id,header, sequentie) VALUES (\"$id_nummer\",\"$pHeader\",\"$pSeq\");"
 sqlite3 -batch ORFVoorspeller.db "select * from Sequentie;"
 
 id_nummer_ORF=$(sqlite3 -batch ORFVoorspeller.db "select count(*) from ORF;")

@@ -1,0 +1,1 @@
+sqlite3 -batch ORFVoorspeller.db "select * from Sequentie WHERE sequentie = \"$1\";"
