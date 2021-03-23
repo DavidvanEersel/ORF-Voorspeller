@@ -114,7 +114,9 @@ public class GUI extends JFrame implements ActionListener {
     }
 
     public void OrfVisualisatie(String seq) {
+
         Graphics tekenveld = visualisatie_orf.getGraphics();
+
         tekenveld.drawString("seq",20,17);
         tekenveld.drawString("rf 1",20,27);
         tekenveld.drawString("rf 2",20,37);
@@ -164,9 +166,6 @@ public class GUI extends JFrame implements ActionListener {
             tekenveld.setColor(Color.black);
             tekenveld.drawString(info_lijst[2],pos,readframe+10);
             tekenveld.drawString(info_lijst[3],pos+lengt-20,readframe+10);
-
-
-
         }
 
 
@@ -179,6 +178,7 @@ public class GUI extends JFrame implements ActionListener {
      * @param event als er op een button wordt geklikt.
      */
     public void actionPerformed(ActionEvent event) {
+
         try {
             File selectedFile;
             int reply;
@@ -200,6 +200,7 @@ public class GUI extends JFrame implements ActionListener {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
 
     }
 
