@@ -35,7 +35,18 @@ public class Databasehandler {
     }
 
 
-    //public ArrayList<String> getResults() {
-
-    //}
+    public ArrayList<String> getResults() {
+        try {
+            String cmd = "bash /home/daaf/IdeaProjects/ORF-Voorspeller/classes/src/Database/setResults.sh";
+            Process process = Runtime.getRuntime().exec(cmd);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+            process.destroy();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
