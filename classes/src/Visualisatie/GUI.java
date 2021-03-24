@@ -23,7 +23,6 @@ import java.util.Scanner;
 public class GUI extends JFrame implements ActionListener {
 
     private static JPanel visualisatie_orf;
-    private static boolean teken;
     private JButton BladerKnop;
     private JTextField nameField;
     private JTextField invulveld;
@@ -119,18 +118,18 @@ public class GUI extends JFrame implements ActionListener {
         Graphics tekenveld = visualisatie_orf.getGraphics();
 
 
-        tekenveld.drawString("seq",20,17);
-        tekenveld.drawString("rf 1",20,27);
-        tekenveld.drawString("rf 2",20,37);
-        tekenveld.drawString("rf 3",20,47);
+        tekenveld.drawString("seq", 20, 17);
+        tekenveld.drawString("rf 1", 20, 27);
+        tekenveld.drawString("rf 2", 20, 37);
+        tekenveld.drawString("rf 3", 20, 47);
         int readframe = 20;
 
         int seq_lengt = seq.length();
         tekenveld.setColor(Color.blue);
         tekenveld.fillRect(50, 10, 400, 10);
         tekenveld.setColor(Color.black);
-        tekenveld.drawString("0",50,20);
-        tekenveld.drawString(String.valueOf(seq_lengt),430,20);
+        tekenveld.drawString("0", 50, 20);
+        tekenveld.drawString(String.valueOf(seq_lengt), 430, 20);
 
         ArrayList<String> results = Databasehandler.getResults(seq);
         System.out.println(results + "Results");
@@ -163,10 +162,9 @@ public class GUI extends JFrame implements ActionListener {
             }
             tekenveld.fillRect(pos, readframe, lengt, 10);
             tekenveld.setColor(Color.black);
-            tekenveld.drawString(info_lijst[2],pos,readframe+10);
-            tekenveld.drawString(info_lijst[3],pos+lengt-20,readframe+10);
+            tekenveld.drawString(info_lijst[2], pos, readframe + 10);
+            tekenveld.drawString(info_lijst[3], pos + lengt - 20, readframe + 10);
         }
-        teken = true;
 
     }
 
@@ -177,12 +175,10 @@ public class GUI extends JFrame implements ActionListener {
      * @param event als er op een button wordt geklikt.
      */
     public void actionPerformed(ActionEvent event) {
-        if (teken) {
-            visualisatie_orf.removeAll();
-            visualisatie_orf.revalidate();
-            visualisatie_orf.repaint();
-            teken = false;
-        }
+
+        visualisatie_orf.removeAll();
+        visualisatie_orf.revalidate();
+        //visualisatie_orf.repaint();
         try {
             File selectedFile;
             int reply;
