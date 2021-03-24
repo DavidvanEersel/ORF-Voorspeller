@@ -25,13 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="van alles aan gepast">
+    <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="gui &quot;gefixt&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ORFVoorspeller.db" beforeDir="false" afterPath="$PROJECT_DIR$/ORFVoorspeller.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Database/setResults.sh" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Database/setResults.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +160,7 @@
       <workItem from="1616359724374" duration="1387000" />
       <workItem from="1616427083567" duration="4926000" />
       <workItem from="1616488829490" duration="12184000" />
-      <workItem from="1616587605297" duration="1216000" />
+      <workItem from="1616587605297" duration="2057000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1616321925683</created>
@@ -220,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616499757150</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="gui &quot;gefixt&quot;">
+      <created>1616588852619</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1616588852619</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +249,7 @@
     <MESSAGE value="GUI en Sequentie gekoppeld, setResults.sh gemaakt" />
     <MESSAGE value="setResults.sh afgemaakt" />
     <MESSAGE value="van alles aan gepast" />
-    <option name="LAST_COMMIT_MESSAGE" value="van alles aan gepast" />
+    <MESSAGE value="gui &quot;gefixt&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="gui &quot;gefixt&quot;" />
   </component>
 </project>

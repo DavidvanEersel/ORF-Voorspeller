@@ -1,7 +1,6 @@
 package Voorspeller;
 
 import Database.Databasehandler;
-import Visualisatie.GUI;
 
 import java.util.ArrayList;
 
@@ -21,7 +20,7 @@ public class Sequentie {
 
     public Sequentie(String sequentie, String header) {
 
-        setSequentie(sequentie.toUpperCase());
+        setSequentie(sequentie);
         setHeader(header);
         setLengte();
         setCheckDNA();
@@ -29,10 +28,10 @@ public class Sequentie {
 
 
         if (this.isCheckDNA() && !this.isCheckInDatabase()) {
-            Databasehandler.setResults(zoekORF(sequentie.toUpperCase(), header), this.getSequentie());
+            Databasehandler.setResults(zoekORF(this.getSequentie(), this.getHeader()), this.getSequentie());
 
             Visualisatie.GUI.OrfVisualisatie(this.getSequentie());
-        }else{
+        } else {
             System.out.println("zit al in de db");
         }
 
@@ -47,9 +46,7 @@ public class Sequentie {
      * @return een ArrayList van de ORF's
      */
     private ArrayList<ORF> zoekORF(String seq, String head) {
-
         ArrayList<ORF> gev_orf = new ArrayList<>();
-
         ArrayList<Integer> start_pos = new ArrayList<>();
         ArrayList<Integer> stop_pos = new ArrayList<>();
 
@@ -60,18 +57,18 @@ public class Sequentie {
             if (seq.startsWith("TAA", i) || seq.startsWith("TAG", i) || seq.startsWith("TGA", i)) {
                 stop_pos.add(i);
             }
-
         }
+
         for (int i : start_pos) {
             for (int x : stop_pos) {
                 if (i % 3 == x % 3 && i < x) {
                     String orf_Seq = seq.substring(i, x + 3);
                     int rf = i % 3 + 1;
                     gev_orf.add(new ORF(orf_Seq, rf, i, head));
-
                 }
             }
         }
+
         return gev_orf;
     }
 
@@ -80,7 +77,7 @@ public class Sequentie {
     }
 
     public void setSequentie(String sequentie) {
-        this.sequentie = sequentie;
+        this.sequentie = sequentie.toUpperCase();
     }
 
     public String getHeader() {
