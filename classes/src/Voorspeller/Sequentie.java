@@ -48,12 +48,10 @@ public class Sequentie {
      */
     private ArrayList<ORF> zoekORF(String seq, String head) {
 
-
         ArrayList<ORF> gev_orf = new ArrayList<>();
 
         ArrayList<Integer> start_pos = new ArrayList<>();
         ArrayList<Integer> stop_pos = new ArrayList<>();
-
 
         for (int i = 0; i < seq.length(); i++) {
             if (seq.startsWith("ATG", i)) {

@@ -113,11 +113,10 @@ public class GUI extends JFrame implements ActionListener {
     }
 
     public static void OrfVisualisatie(String seq) {
-
-
         Graphics tekenveld = visualisatie_orf.getGraphics();
-
-
+        tekenveld.setColor(Color.white);
+        tekenveld.fillRect(0,0,500,200);
+        tekenveld.setColor(Color.black);
         tekenveld.drawString("seq", 20, 17);
         tekenveld.drawString("rf 1", 20, 27);
         tekenveld.drawString("rf 2", 20, 37);
@@ -175,7 +174,6 @@ public class GUI extends JFrame implements ActionListener {
      * @param event als er op een button wordt geklikt.
      */
     public void actionPerformed(ActionEvent event) {
-
         visualisatie_orf.removeAll();
         visualisatie_orf.revalidate();
         //visualisatie_orf.repaint();

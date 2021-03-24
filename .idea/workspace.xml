@@ -27,10 +27,11 @@
   <component name="ChangeListManager">
     <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="van alles aan gepast">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ORFVoorspeller.db" beforeDir="false" afterPath="$PROJECT_DIR$/ORFVoorspeller.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/src/Database/setResults.sh" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Database/setResults.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +48,18 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="David" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1pqZHuOn4UB3exegZkCQEN17mnc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -60,19 +69,40 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="14" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/classes/src/Database" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="Visualisatie" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/classes/src/Database" />
     </key>
   </component>
   <component name="RunManager" selected="Application.GUI">
+    <configuration name="Databasehandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Database.Databasehandler" />
+      <module name="classes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Visualisatie.GUI" />
       <module name="classes" />
@@ -86,21 +116,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabaseMaker.sh" type="ShConfigurationType" temporary="true">
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/classes/src/Database/DatabaseMaker.sh" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/classes/src/Database" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <method v="2" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GUI" />
-        <item itemvalue="Shell Script.DatabaseMaker.sh" />
+        <item itemvalue="Application.Databasehandler" />
       </list>
     </recent_temporary>
   </component>
@@ -130,6 +160,9 @@
       <workItem from="1616322080557" duration="9819000" />
       <workItem from="1616349369885" duration="9900000" />
       <workItem from="1616359724374" duration="1387000" />
+      <workItem from="1616427083567" duration="4926000" />
+      <workItem from="1616488829490" duration="12184000" />
+      <workItem from="1616587605297" duration="1216000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1616321925683</created>
@@ -145,41 +178,60 @@
       <option name="project" value="LOCAL" />
       <updated>1616358908829</updated>
     </task>
-    <task id="LOCAL-00003" summary="ORF visualisatie gemaakt (alleen nog ORFget inbouwen">
-      <created>1616497007269</created>
+    <task id="LOCAL-00003" summary="GUI en Sequentie gekoppeld, setResults.sh gemaakt">
+      <created>1616431374914</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1616497007269</updated>
+      <updated>1616431374915</updated>
     </task>
-    <task id="LOCAL-00004" summary="ORF visualisatie gemaakt (alleen nog ORFget inbouwen) .2">
-      <created>1616497016769</created>
+    <task id="LOCAL-00004" summary="setResults.sh afgemaakt">
+      <created>1616491686380</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1616497016769</updated>
+      <updated>1616491686380</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="van alles aan gepast">
+      <created>1616497062957</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616497062957</updated>
+    </task>
+    <task id="LOCAL-00006" summary="van alles aan gepast">
+      <created>1616497173229</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616497173229</updated>
+    </task>
+    <task id="LOCAL-00007" summary="van alles aan gepast">
+      <created>1616499741861</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1616499741861</updated>
+    </task>
+    <task id="LOCAL-00008" summary="van alles aan gepast">
+      <created>1616499757150</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616499757150</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="Margo" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -189,93 +241,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <MESSAGE value="GUI en Sequentie gekoppeld (readFile kan verbeterd worden)" />
-    <MESSAGE value="ORF visualisatie gemaakt (alleen nog ORFget inbouwen" />
-    <MESSAGE value="ORF visualisatie gemaakt (alleen nog ORFget inbouwen) .2" />
-    <option name="LAST_COMMIT_MESSAGE" value="ORF visualisatie gemaakt (alleen nog ORFget inbouwen) .2" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616491263692">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1616491263692" />
-    <state x="779" y="312" width="424" height="491" key="FileChooserDialogImpl" timestamp="1616338557741">
-      <screen x="72" y="29" width="1848" height="1051" />
-    </state>
-    <state x="779" y="312" width="424" height="491" key="FileChooserDialogImpl/72.29.1848.1051@72.29.1848.1051" timestamp="1616338557741" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1616502084287">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1616502084287" />
-    <state width="1317" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1616434485913" />
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.29.1848.1051@72.29.1848.1051" timestamp="1616360768582" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1616502084287">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1616502084287" />
-    <state width="1317" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1616434485912" />
-    <state width="1802" height="275" key="GridCell.Tab.0.center/72.29.1848.1051@72.29.1848.1051" timestamp="1616360768581" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1616502084287">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1616502084287" />
-    <state width="1317" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1616434485912" />
-    <state width="1802" height="275" key="GridCell.Tab.0.left/72.29.1848.1051@72.29.1848.1051" timestamp="1616360768581" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1616502084287">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1616502084287" />
-    <state width="1317" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1616434485912" />
-    <state width="1802" height="275" key="GridCell.Tab.0.right/72.29.1848.1051@72.29.1848.1051" timestamp="1616360768582" />
-    <state width="1802" height="339" key="GridCell.Tab.1.bottom" timestamp="1616359272681">
-      <screen x="72" y="29" width="1848" height="1051" />
-    </state>
-    <state width="1802" height="339" key="GridCell.Tab.1.bottom/72.29.1848.1051@72.29.1848.1051" timestamp="1616359272681" />
-    <state width="1802" height="339" key="GridCell.Tab.1.center" timestamp="1616359272681">
-      <screen x="72" y="29" width="1848" height="1051" />
-    </state>
-    <state width="1802" height="339" key="GridCell.Tab.1.center/72.29.1848.1051@72.29.1848.1051" timestamp="1616359272681" />
-    <state width="1802" height="339" key="GridCell.Tab.1.left" timestamp="1616359272680">
-      <screen x="72" y="29" width="1848" height="1051" />
-    </state>
-    <state width="1802" height="339" key="GridCell.Tab.1.left/72.29.1848.1051@72.29.1848.1051" timestamp="1616359272680" />
-    <state width="1802" height="339" key="GridCell.Tab.1.right" timestamp="1616359272681">
-      <screen x="72" y="29" width="1848" height="1051" />
-    </state>
-    <state width="1802" height="339" key="GridCell.Tab.1.right/72.29.1848.1051@72.29.1848.1051" timestamp="1616359272681" />
-    <state x="461" y="226" width="728" height="482" key="MultipleFileMergeDialog" timestamp="1616501502183">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="461" y="226" key="MultipleFileMergeDialog/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1616501502183" />
-    <state x="627" y="317" width="728" height="482" key="MultipleFileMergeDialog/72.29.1848.1051@72.29.1848.1051" timestamp="1616321963331" />
-    <state x="479" y="132" width="1024" height="852" key="SettingsEditor" timestamp="1615912728815">
-      <screen x="72" y="29" width="1848" height="1051" />
-    </state>
-    <state x="479" y="132" width="1024" height="852" key="SettingsEditor/72.29.1848.1051@72.29.1848.1051" timestamp="1615912728815" />
-    <state x="431" y="205" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1616497019935">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="205" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1616497019935" />
-    <state x="591" y="290" width="800" height="535" key="Vcs.Push.Dialog.v2/72.29.1848.1051@72.29.1848.1051" timestamp="1616358918358" />
-    <state x="172" y="129" width="1648" height="851" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1615912951112">
-      <screen x="72" y="29" width="1848" height="1051" />
-    </state>
-    <state x="172" y="129" width="1648" height="851" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/72.29.1848.1051@72.29.1848.1051" timestamp="1615912951112" />
-    <state x="586" y="345" width="365" height="169" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616499785484">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="586" y="345" width="365" height="169" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1616499785484" />
-    <state x="777" y="469" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.29.1848.1051@72.29.1848.1051" timestamp="1616321735489" />
-    <state x="538" y="125" key="git4idea.branch.GitSmartOperationDialog" timestamp="1616499856717">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="538" y="125" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1616499856717" />
-    <state x="617" y="156" width="748" height="803" key="new project wizard" timestamp="1615912834168">
-      <screen x="72" y="29" width="1848" height="1051" />
-    </state>
-    <state x="617" y="156" width="748" height="803" key="new project wizard/72.29.1848.1051@72.29.1848.1051" timestamp="1615912834168" />
-    <state x="366" y="312" width="325" height="492" key="refactoring.ChangeSignatureDialog" timestamp="1616357780237">
-      <screen x="72" y="29" width="1848" height="1051" />
-    </state>
-    <state x="366" y="312" width="325" height="492" key="refactoring.ChangeSignatureDialog/72.29.1848.1051@72.29.1848.1051" timestamp="1616357780237" />
+    <MESSAGE value="GUI en Sequentie gekoppeld, setResults.sh gemaakt" />
+    <MESSAGE value="setResults.sh afgemaakt" />
+    <MESSAGE value="van alles aan gepast" />
+    <option name="LAST_COMMIT_MESSAGE" value="van alles aan gepast" />
   </component>
 </project>
