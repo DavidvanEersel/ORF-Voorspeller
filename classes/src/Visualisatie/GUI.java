@@ -51,7 +51,6 @@ public class GUI extends JFrame implements ActionListener {
         window.add(kiestekst);
         window.add(kiesbestand);
 
-
         kiesbestand.setText("Om een bestand te verwerken klik hierop");
         kiestekst.setText("Om tekst te verwerken klik hierop");
 
@@ -112,6 +111,7 @@ public class GUI extends JFrame implements ActionListener {
         new Sequentie(invulveld.getText(), ">" + dtf.format(now));
     }
 
+
     public static void OrfVisualisatie(String seq) {
         Graphics tekenveld = visualisatie_orf.getGraphics();
         tekenveld.setColor(Color.white);
@@ -164,7 +164,6 @@ public class GUI extends JFrame implements ActionListener {
             tekenveld.drawString(info_lijst[2], pos, readframe + 10);
             tekenveld.drawString(info_lijst[3], pos + lengt - 20, readframe + 10);
         }
-
     }
 
 

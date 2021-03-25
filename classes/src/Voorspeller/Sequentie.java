@@ -31,8 +31,10 @@ public class Sequentie {
             Databasehandler.setResults(zoekORF(this.getSequentie(), this.getHeader()), this.getSequentie());
 
             Visualisatie.GUI.OrfVisualisatie(this.getSequentie());
+        } else if (this.isCheckInDatabase()) {
+            System.out.println("De sequentie zit al in de database.");
         } else {
-            System.out.println("zit al in de db");
+            System.out.println("De sequentie is geen DNA-sequentie.");
         }
 
     }
@@ -73,8 +75,6 @@ public class Sequentie {
                 }
             }
         }
-
-
         return gev_orf;
     }
 
