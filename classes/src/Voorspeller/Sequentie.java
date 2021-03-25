@@ -59,15 +59,21 @@ public class Sequentie {
             }
         }
 
+        boolean door = true;
         for (int i : start_pos) {
+            door = true;
             for (int x : stop_pos) {
-                if (i % 3 == x % 3 && i < x) {
-                    String orf_Seq = seq.substring(i, x + 3);
-                    int rf = i % 3 + 1;
-                    gev_orf.add(new ORF(orf_Seq, rf, i, head));
+                if (door) {
+                    if (i % 3 == x % 3 && i < x) {
+                        String orf_Seq = seq.substring(i, x + 3);
+                        int rf = i % 3 + 1;
+                        gev_orf.add(new ORF(orf_Seq, rf, i, head));
+                        door = false;
+                    }
                 }
             }
         }
+
 
         return gev_orf;
     }
