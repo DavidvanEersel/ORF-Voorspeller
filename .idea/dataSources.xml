@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="ORFVoorspeller" uuid="00ebf76d-675b-42a5-b64c-f2842f93de48">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/ORFVoorspeller.db</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="ORFVoorspeller [2]" uuid="b5fbf26b-85ac-48e8-bfae-61c3ed48d3ff">
+    <data-source source="LOCAL" name="ORFVoorspeller" uuid="e63f9471-3f4f-49e0-9f86-b05cdb963706">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>

@@ -25,8 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="errors gefixt">
-      <change beforePath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" afterDir="false" />
+    <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="databasehandler werkend krijgen">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/src/Database/Databasehandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Database/Databasehandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Database/Databasehandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Database/Databasehandler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +87,7 @@
       <recent name="$PROJECT_DIR$/classes/src/Database" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GUI">
+  <component name="RunManager" selected="Shell Script.setResults.sh">
     <configuration name="Databasehandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Database.Databasehandler" />
       <module name="classes" />
@@ -124,9 +127,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DatabaseMaker.sh" type="ShConfigurationType" temporary="true">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/classes/src/Database/DatabaseMaker.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/classes/src/Database" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="setResults.sh" type="ShConfigurationType" temporary="true">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/classes/src/Database/setResults.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/classes/src/Database" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Shell Script.setResults.sh" />
         <item itemvalue="Application.GUI" />
+        <item itemvalue="Shell Script.DatabaseMaker.sh" />
         <item itemvalue="Application.Databasehandler" />
       </list>
     </recent_temporary>
@@ -231,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616679604969</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="databasehandler werkend krijgen">
+      <created>1616680171408</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1616680171408</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,29 +291,30 @@
     <MESSAGE value="van alles aan gepast" />
     <MESSAGE value="gui &quot;gefixt&quot;" />
     <MESSAGE value="errors gefixt" />
-    <option name="LAST_COMMIT_MESSAGE" value="errors gefixt" />
+    <MESSAGE value="databasehandler werkend krijgen" />
+    <option name="LAST_COMMIT_MESSAGE" value="databasehandler werkend krijgen" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1616679517621">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1616681826995">
       <screen x="72" y="29" width="1848" height="1051" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.29.1848.1051@72.29.1848.1051" timestamp="1616679517621" />
-    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1616679517619">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.29.1848.1051@72.29.1848.1051" timestamp="1616681826995" />
+    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1616681826994">
       <screen x="72" y="29" width="1848" height="1051" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.center/72.29.1848.1051@72.29.1848.1051" timestamp="1616679517619" />
-    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1616679517617">
+    <state width="1802" height="275" key="GridCell.Tab.0.center/72.29.1848.1051@72.29.1848.1051" timestamp="1616681826994" />
+    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1616681826993">
       <screen x="72" y="29" width="1848" height="1051" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.left/72.29.1848.1051@72.29.1848.1051" timestamp="1616679517617" />
-    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1616679517620">
+    <state width="1802" height="275" key="GridCell.Tab.0.left/72.29.1848.1051@72.29.1848.1051" timestamp="1616681826993" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1616681826995">
       <screen x="72" y="29" width="1848" height="1051" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.right/72.29.1848.1051@72.29.1848.1051" timestamp="1616679517620" />
-    <state x="591" y="290" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1616679613646">
+    <state width="1802" height="275" key="GridCell.Tab.0.right/72.29.1848.1051@72.29.1848.1051" timestamp="1616681826995" />
+    <state x="591" y="290" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1616680183077">
       <screen x="72" y="29" width="1848" height="1051" />
     </state>
-    <state x="591" y="290" width="800" height="535" key="Vcs.Push.Dialog.v2/72.29.1848.1051@72.29.1848.1051" timestamp="1616679613646" />
+    <state x="591" y="290" width="800" height="535" key="Vcs.Push.Dialog.v2/72.29.1848.1051@72.29.1848.1051" timestamp="1616680183077" />
     <state x="727" y="190" width="527" height="735" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1616679841378">
       <screen x="72" y="29" width="1848" height="1051" />
     </state>

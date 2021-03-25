@@ -19,7 +19,7 @@ public class Databasehandler {
             String oStop = orf.getStopPositie() + " ";
             int oReadingFrame = orf.getReadingFrame();
             try {
-                String cmd = "bash /home/margo/Documents/HAN/Jaar 2/Blok 7/Informatica/ORF-Voorspeller/classes/src/Database/setResults.sh "
+                String cmd = "bash /home/margo/Documents/HAN/'Jaar 2'/'Blok 7'/Informatica/ORF-Voorspeller/classes/src/Database/setResults.sh "
                         + pHeader + pSeq + seqORF + oStart + oStop + oReadingFrame;
                 Process process = Runtime.getRuntime().exec(cmd);
                 BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
@@ -39,7 +39,7 @@ public class Databasehandler {
         pSeq = seq;
         ArrayList<String> results = new ArrayList<>();
         try {
-            String cmd = "bash /home/margo/Documents/HAN/Jaar 2/Blok 7/Informatica/ORF-Voorspeller/classes/src/Database/getResults.sh " + pSeq;
+            String cmd = "bash /home/margo/Documents/HAN/'Jaar 2'/'Blok 7'/Informatica/ORF-Voorspeller/classes/src/Database/getResults.sh " + pSeq;
             Process process = Runtime.getRuntime().exec(cmd);
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
@@ -57,7 +57,7 @@ public class Databasehandler {
         String temp = "";
         pSeq = sequentie;
         try {
-            String cmd = "bash /home/margo/Documents/HAN/Jaar 2/Blok 7/Informatica/ORF-Voorspeller/classes/src/Database/checkInDatabase.sh " + pSeq;
+            String cmd = "bash /home/margo/Documents/HAN/'Jaar 2'/'Blok 7'/Informatica/ORF-Voorspeller/classes/src/Database/checkInDatabase.sh " + pSeq;
             Process process = Runtime.getRuntime().exec(cmd);
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
