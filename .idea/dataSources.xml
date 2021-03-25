@@ -7,11 +7,16 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/ORFVoorspeller.db</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="ORFVoorspeller [2]" uuid="c71d04ea-ced1-449a-8e82-6e68e11669fa">
+    <data-source source="LOCAL" name="ORFVoorspeller [2]" uuid="b5fbf26b-85ac-48e8-bfae-61c3ed48d3ff">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/classes/src/Database/ORFVoorspeller.db</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.34.0/sqlite-jdbc-3.34.0.jar</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>

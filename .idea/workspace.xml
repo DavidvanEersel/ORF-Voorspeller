@@ -25,14 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="gui &quot;gefixt&quot;">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORFVoorspeller.db" beforeDir="false" />
+    <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="errors gefixt">
       <change beforePath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Visualisatie/OrfVisualiatie.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Visualisatie/OrfVisualiatie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616588852619</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="errors gefixt">
+      <created>1616679604969</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1616679604969</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +256,33 @@
     <MESSAGE value="setResults.sh afgemaakt" />
     <MESSAGE value="van alles aan gepast" />
     <MESSAGE value="gui &quot;gefixt&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="gui &quot;gefixt&quot;" />
+    <MESSAGE value="errors gefixt" />
+    <option name="LAST_COMMIT_MESSAGE" value="errors gefixt" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1616679517621">
+      <screen x="72" y="29" width="1848" height="1051" />
+    </state>
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.29.1848.1051@72.29.1848.1051" timestamp="1616679517621" />
+    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1616679517619">
+      <screen x="72" y="29" width="1848" height="1051" />
+    </state>
+    <state width="1802" height="275" key="GridCell.Tab.0.center/72.29.1848.1051@72.29.1848.1051" timestamp="1616679517619" />
+    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1616679517617">
+      <screen x="72" y="29" width="1848" height="1051" />
+    </state>
+    <state width="1802" height="275" key="GridCell.Tab.0.left/72.29.1848.1051@72.29.1848.1051" timestamp="1616679517617" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1616679517620">
+      <screen x="72" y="29" width="1848" height="1051" />
+    </state>
+    <state width="1802" height="275" key="GridCell.Tab.0.right/72.29.1848.1051@72.29.1848.1051" timestamp="1616679517620" />
+    <state x="591" y="290" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1616679613646">
+      <screen x="72" y="29" width="1848" height="1051" />
+    </state>
+    <state x="591" y="290" width="800" height="535" key="Vcs.Push.Dialog.v2/72.29.1848.1051@72.29.1848.1051" timestamp="1616679613646" />
+    <state x="727" y="190" width="527" height="735" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1616679841378">
+      <screen x="72" y="29" width="1848" height="1051" />
+    </state>
+    <state x="727" y="190" width="527" height="735" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/72.29.1848.1051@72.29.1848.1051" timestamp="1616679841378" />
   </component>
 </project>

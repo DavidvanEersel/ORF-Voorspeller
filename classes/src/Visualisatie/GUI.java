@@ -97,7 +97,6 @@ public class GUI extends JFrame implements ActionListener {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
     }
 
 
@@ -197,7 +196,6 @@ public class GUI extends JFrame implements ActionListener {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
 
@@ -217,6 +215,4 @@ public class GUI extends JFrame implements ActionListener {
         frame.setVisible(true); // geeft de GUI weer
 
     }
-
-
 }
