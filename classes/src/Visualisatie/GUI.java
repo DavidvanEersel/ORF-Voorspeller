@@ -7,7 +7,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * GUI class
+ * GUImaker class
  *
  * @author Gijsbert en Margo
  */
@@ -31,9 +32,9 @@ public class GUI extends JFrame implements ActionListener {
 
 
     /**
-     * Deze methode maakt de GUI.
+     * Deze methode maakt de GUImaker.
      */
-    public void GUI() {
+    public void GUImaker() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         Container window = getContentPane();
         window.setLayout(new FlowLayout());
@@ -114,7 +115,7 @@ public class GUI extends JFrame implements ActionListener {
     public static void OrfVisualisatie(String seq) {
         Graphics tekenveld = visualisatie_orf.getGraphics();
         tekenveld.setColor(Color.white);
-        tekenveld.fillRect(0,0,500,200);
+        tekenveld.fillRect(0, 0, 500, 200);
         tekenveld.setColor(Color.black);
         tekenveld.drawString("seq", 20, 17);
         tekenveld.drawString("rf 1", 20, 27);
@@ -174,7 +175,6 @@ public class GUI extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent event) {
         visualisatie_orf.removeAll();
         visualisatie_orf.revalidate();
-        //visualisatie_orf.repaint();
         try {
             File selectedFile;
             int reply;
@@ -211,8 +211,8 @@ public class GUI extends JFrame implements ActionListener {
         }
         GUI frame = new GUI(); // maakt de frame aan
         frame.setSize(600, 400); // zet de grootte van het frame
-        frame.GUI();
-        frame.setVisible(true); // geeft de GUI weer
+        frame.GUImaker();
+        frame.setVisible(true); // geeft de GUImaker weer
 
     }
 }
