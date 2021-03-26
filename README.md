@@ -20,3 +20,5 @@ Deze verschillen zijn ontstaan doordat er niet genoeg tijd was om deze dingen te
 en er is vervolgens gekozen om te focussen op de belangrijkere functionaliteiten.
 - Er zijn een aantal return statements veranderd. 
 Dit verschil is ontstaan doordat het makkelijker was om te werken met de aangepaste return statements. 
+- De Funcite Visualisatie is in de GUI.java ingebouwd
+Dit is gedaan omdat het makkelijker was om de visualisatie te maken.
