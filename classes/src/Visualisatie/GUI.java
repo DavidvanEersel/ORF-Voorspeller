@@ -7,7 +7,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * GUI class
+ * GUImaker class
  *
  * @author Gijsbert en Margo
  */
@@ -31,9 +32,9 @@ public class GUI extends JFrame implements ActionListener {
 
 
     /**
-     * Deze methode maakt de GUI.
+     * Deze methode maakt de GUImaker.
      */
-    public void GUI() {
+    public void GUImaker() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         Container window = getContentPane();
         window.setLayout(new FlowLayout());
@@ -50,7 +51,6 @@ public class GUI extends JFrame implements ActionListener {
         groep.add(kiesbestand);
         window.add(kiestekst);
         window.add(kiesbestand);
-
 
         kiesbestand.setText("Om een bestand te verwerken klik hierop");
         kiestekst.setText("Om tekst te verwerken klik hierop");
@@ -98,7 +98,6 @@ public class GUI extends JFrame implements ActionListener {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
     }
 
 
@@ -108,23 +107,28 @@ public class GUI extends JFrame implements ActionListener {
     public void readTekstveld() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd_HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
+
         new Sequentie(invulveld.getText(), ">" + dtf.format(now));
     }
 
+
     public static void OrfVisualisatie(String seq) {
         Graphics tekenveld = visualisatie_orf.getGraphics();
-        tekenveld.drawString("seq",20,17);
-        tekenveld.drawString("rf 1",20,27);
-        tekenveld.drawString("rf 2",20,37);
-        tekenveld.drawString("rf 3",20,47);
+        tekenveld.setColor(Color.white);
+        tekenveld.fillRect(0, 0, 500, 200);
+        tekenveld.setColor(Color.black);
+        tekenveld.drawString("seq", 20, 17);
+        tekenveld.drawString("rf 1", 20, 27);
+        tekenveld.drawString("rf 2", 20, 37);
+        tekenveld.drawString("rf 3", 20, 47);
         int readframe = 20;
 
         int seq_lengt = seq.length();
         tekenveld.setColor(Color.blue);
         tekenveld.fillRect(50, 10, 400, 10);
         tekenveld.setColor(Color.black);
-        tekenveld.drawString("0",50,20);
-        tekenveld.drawString(String.valueOf(seq_lengt),430,20);
+        tekenveld.drawString("0", 50, 20);
+        tekenveld.drawString(String.valueOf(seq_lengt), 430, 20);
 
         ArrayList<String> results = Databasehandler.getResults(seq);
         System.out.println(results + "Results");
@@ -157,8 +161,8 @@ public class GUI extends JFrame implements ActionListener {
             }
             tekenveld.fillRect(pos, readframe, lengt, 10);
             tekenveld.setColor(Color.black);
-            tekenveld.drawString(info_lijst[2],pos,readframe+10);
-            tekenveld.drawString(info_lijst[3],pos+lengt-20,readframe+10);
+            tekenveld.drawString(info_lijst[2], pos, readframe + 10);
+            tekenveld.drawString(info_lijst[3], pos + lengt - 20, readframe + 10);
         }
     }
 
@@ -169,6 +173,8 @@ public class GUI extends JFrame implements ActionListener {
      * @param event als er op een button wordt geklikt.
      */
     public void actionPerformed(ActionEvent event) {
+        visualisatie_orf.removeAll();
+        visualisatie_orf.revalidate();
         try {
             File selectedFile;
             int reply;
@@ -190,7 +196,6 @@ public class GUI extends JFrame implements ActionListener {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
 
@@ -206,10 +211,8 @@ public class GUI extends JFrame implements ActionListener {
         }
         GUI frame = new GUI(); // maakt de frame aan
         frame.setSize(600, 400); // zet de grootte van het frame
-        frame.GUI();
-        frame.setVisible(true); // geeft de GUI weer
+        frame.GUImaker();
+        frame.setVisible(true); // geeft de GUImaker weer
 
     }
-
-
 }
