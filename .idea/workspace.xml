@@ -16,28 +16,13 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:Margo" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="Databasemaker verwijdert en ergens anders toegevoegd">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Database/Databasehandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Database/Databasehandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Database/checkInDatabase.sh" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Database/checkInDatabase.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/ORF.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/ORF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Database/DatabaseMaker.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Database/Databasehandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Database/Databasehandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Voorspeller/ORF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Voorspeller/ORF.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatabaseMaker.sh" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseMaker.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
