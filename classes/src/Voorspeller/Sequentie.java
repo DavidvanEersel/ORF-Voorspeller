@@ -8,6 +8,9 @@ import java.util.ArrayList;
  * Sequentie class
  *
  * @author Margo en Jasper
+ * @date 26-03-2021
+ * @function Object sequentie wordt aangemaakt met de bij behoorende items zoals sequentie.
+ * @bugs De sequentie mag niet te groot zijn, anders treedt er een Mememory error op.
  */
 
 public class Sequentie {
