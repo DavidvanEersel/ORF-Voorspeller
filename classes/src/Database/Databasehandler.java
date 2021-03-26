@@ -19,7 +19,7 @@ public class Databasehandler {
     static String pSeq;
 
     /**
-     * Deze methode zet de resultaten in de Database
+     * Deze methode zet de resultaten in de ORFVoorspeller.db
      *
      * @param orfs      een arraylist met alle orf objecten
      * @param sequentie een string met daarin de sequentie
@@ -33,7 +33,7 @@ public class Databasehandler {
             String oStop = orf.getStopPositie() + " ";
             int oReadingFrame = orf.getReadingFrame();
             try {
-                String cmd = "/home/daaf/IdeaProjects/ORF-Voorspeller/classes/src/Database/setResults.sh "
+                String cmd = "C:\\Users\\jaspe\\IdeaProjects\\ORF-Voorspeller_1\\classes\\src\\Database\\setResults.sh "
                         + pHeader + pSeq + seqORF + oStart + oStop + oReadingFrame;
                 Process process = Runtime.getRuntime().exec(cmd);
                 BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
@@ -49,7 +49,7 @@ public class Databasehandler {
     }
 
     /**
-     * Deze methode haalt de resultaten uit de database
+     * Deze methode haalt de resultaten uit ORFVoorspeller.db
      *
      * @param seq de string met de sequentie die gebeurt wordt om te zoeken naar de sequntie
      * @return een aaraylist met strings wat de resultaten zijn
@@ -58,7 +58,7 @@ public class Databasehandler {
         pSeq = seq;
         ArrayList<String> results = new ArrayList<>();
         try {
-            String cmd = "/home/daaf/IdeaProjects/ORF-Voorspeller/classes/src/Database/getResults.sh " + pSeq;
+            String cmd = "C:\\Users\\jaspe\\IdeaProjects\\ORF-Voorspeller_1\\classes\\src\\Database\\getResults.sh " + pSeq;
             Process process = Runtime.getRuntime().exec(cmd);
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
@@ -73,7 +73,7 @@ public class Databasehandler {
     }
 
     /**
-     * Deze methode check of de sequentie al in de database zit
+     * Deze methode check of de sequentie al in ORFVoorspeller.db zit
      *
      * @param sequentie de string met de sequentie die kijkt of de sequentie in de database staat
      * @return boolean of hij in de database staat
@@ -82,7 +82,7 @@ public class Databasehandler {
         String temp = "";
         pSeq = sequentie;
         try {
-            String cmd = "/home/daaf/IdeaProjects/ORF-Voorspeller/classes/src/Database/checkInDatabase.sh " + pSeq;
+            String cmd = "C:\\Users\\jaspe\\IdeaProjects\\ORF-Voorspeller_1\\classes\\src\\Database\\checkInDatabase.sh " + pSeq;
             Process process = Runtime.getRuntime().exec(cmd);
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;

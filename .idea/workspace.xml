@@ -20,24 +20,16 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:Margo" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="Databasemaker verwijdert en ergens anders toegevoegd">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Database/Databasehandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Database/Databasehandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Database/checkInDatabase.sh" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Database/checkInDatabase.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/ORF.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/ORF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Database/DatabaseMaker.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/src/Visualisatie/OrfVisualiatie.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/Database/Databasehandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Database/Databasehandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Voorspeller/ORF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Voorspeller/ORF.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +46,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Jasper" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,6 +93,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.GUI">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Databasehandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Database.Databasehandler" />
       <module name="classes" />
@@ -127,19 +130,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="DatabaseMaker.sh" type="ShConfigurationType" temporary="true">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/DatabaseMaker.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GUI" />
+        <item itemvalue="Application.Databasehandler" />
+        <item itemvalue="Shell Script.DatabaseMaker.sh" />
         <item itemvalue="Application.GUI" />
         <item itemvalue="Application.Databasehandler" />
       </list>
@@ -286,7 +292,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -305,5 +323,27 @@
     <MESSAGE value="docstrings aan alle bestanden toegevoegd&#10;In de class GUI de methode GUI aangepast naar GUImaker" />
     <MESSAGE value="Databasemaker verwijdert en ergens anders toegevoegd" />
     <option name="LAST_COMMIT_MESSAGE" value="Databasemaker verwijdert en ergens anders toegevoegd" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1317" height="210" key="GridCell.Tab.0.bottom" timestamp="1616750901758">
+      <screen x="1920" y="0" width="1360" height="728" />
+    </state>
+    <state width="1317" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1616750901758" />
+    <state width="1317" height="210" key="GridCell.Tab.0.center" timestamp="1616750901758">
+      <screen x="1920" y="0" width="1360" height="728" />
+    </state>
+    <state width="1317" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1616750901758" />
+    <state width="1317" height="210" key="GridCell.Tab.0.left" timestamp="1616750901758">
+      <screen x="1920" y="0" width="1360" height="728" />
+    </state>
+    <state width="1317" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1616750901758" />
+    <state width="1317" height="210" key="GridCell.Tab.0.right" timestamp="1616750901758">
+      <screen x="1920" y="0" width="1360" height="728" />
+    </state>
+    <state width="1317" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1616750901758" />
+    <state x="2417" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616750312453">
+      <screen x="1920" y="0" width="1360" height="728" />
+    </state>
+    <state x="2417" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1616750312453" />
   </component>
 </project>
