@@ -25,13 +25,19 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="Start stop pos gefixt">
+    <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="Databasemaker verwijdert en ergens anders toegevoegd">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Database/Databasehandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Database/Databasehandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/src/Database/checkInDatabase.sh" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Database/checkInDatabase.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/ORF.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/ORF.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Database/DatabaseMaker.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/Database/Databasehandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Database/Databasehandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Voorspeller/ORF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Voorspeller/ORF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +76,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="14" />
@@ -168,7 +175,7 @@
       <workItem from="1616488829490" duration="12184000" />
       <workItem from="1616587605297" duration="3145000" />
       <workItem from="1616676291346" duration="681000" />
-      <workItem from="1616745869553" duration="2399000" />
+      <workItem from="1616745869553" duration="4094000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1616321925683</created>
@@ -247,7 +254,28 @@
       <option name="project" value="LOCAL" />
       <updated>1616590410876</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="docstrings aan alle bestanden toegevoegd&#10;In de class GUI de methode GUI aangepast naar GUImaker">
+      <created>1616748323756</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616748323756</updated>
+    </task>
+    <task id="LOCAL-00013" summary="docstrings aan alle bestanden toegevoegd&#10;In de class GUI de methode GUI aangepast naar GUImaker">
+      <created>1616748337114</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616748337114</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Databasemaker verwijdert en ergens anders toegevoegd">
+      <created>1616748559311</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1616748559312</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +302,8 @@
     <MESSAGE value="gui &quot;gefixt&quot;" />
     <MESSAGE value="Enters verwijderd" />
     <MESSAGE value="Start stop pos gefixt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start stop pos gefixt" />
+    <MESSAGE value="docstrings aan alle bestanden toegevoegd&#10;In de class GUI de methode GUI aangepast naar GUImaker" />
+    <MESSAGE value="Databasemaker verwijdert en ergens anders toegevoegd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Databasemaker verwijdert en ergens anders toegevoegd" />
   </component>
 </project>
