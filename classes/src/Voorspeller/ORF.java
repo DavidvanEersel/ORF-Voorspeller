@@ -5,6 +5,9 @@ package Voorspeller;
  * ORF class
  *
  * @author Margo en Jasper
+ * @date 26-03-2021
+ * @function Object ORF wordt aangemaakt met de bijbehoorende items zoals Readingframe.
+ * @bugs geen bugs bekend.
  */
 
 public class ORF {

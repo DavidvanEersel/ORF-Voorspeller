@@ -19,6 +19,9 @@ import java.util.Scanner;
  * GUImaker class
  *
  * @author Gijsbert en Margo
+ * @date 26-03-2021
+ * @function Maakt de GUI aan en maakt ook een visualisatie als er een ORF is gevonden.
+ * @bugs Visualisatie geeft niet de volledige reading weer
  */
 
 public class GUI extends JFrame implements ActionListener {

@@ -11,6 +11,9 @@ import java.util.ArrayList;
  * Databasehandler class
  *
  * @author David van Eersel
+ * @date 26-03-2021
+ * @function zorgt ervoor dat er een communicatie is met de database.
+ * @bugs bestanden hebben niet altijd de rechten of iets te mogen uit te voeren. Op dat moment treedt er een exceptie op
  */
 public class Databasehandler {
     static String pSeq;
