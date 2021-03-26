@@ -20,16 +20,12 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:Margo" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="GUI en Sequentie gekoppeld (readFile kan verbeterd worden)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" afterDir="false" />
-    </list>
+    <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="GUI en Sequentie gekoppeld (readFile kan verbeterd worden)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,9 +200,10 @@
       <screen x="72" y="29" width="1848" height="1051" />
     </state>
     <state x="172" y="129" width="1648" height="851" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/72.29.1848.1051@72.29.1848.1051" timestamp="1615912951112" />
-    <state x="777" y="469" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616321735489">
-      <screen x="72" y="29" width="1848" height="1051" />
+    <state x="2439" y="305" width="365" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616753006017">
+      <screen x="1920" y="0" width="1360" height="728" />
     </state>
+    <state x="2439" y="305" width="365" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1360.728@1920.0.1360.728" timestamp="1616753006017" />
     <state x="777" y="469" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.29.1848.1051@72.29.1848.1051" timestamp="1616321735489" />
     <state x="617" y="156" width="748" height="803" key="new project wizard" timestamp="1615912834168">
       <screen x="72" y="29" width="1848" height="1051" />
