@@ -16,28 +16,17 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:Margo" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48f78783-7ab7-40b8-8d7b-ebada8cf1848" name="Default Changelist" comment="Databasemaker verwijdert en ergens anders toegevoegd">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Database/Databasehandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Database/Databasehandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/src/Database/checkInDatabase.sh" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Database/checkInDatabase.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/src/Test_main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Visualisatie/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/src/Visualisatie/OrfVisualiatie.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/ORF.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/ORF.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" beforeDir="false" afterPath="$PROJECT_DIR$/classes/src/Voorspeller/Sequentie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Database/DatabaseMaker.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Database/Databasehandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Database/Databasehandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Visualisatie/GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Voorspeller/ORF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Voorspeller/ORF.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Voorspeller/Sequentie.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Margo" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -275,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616748559312</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="het werkt :)">
+      <created>1616752447762</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1616752447762</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +300,13 @@
     <MESSAGE value="Start stop pos gefixt" />
     <MESSAGE value="docstrings aan alle bestanden toegevoegd&#10;In de class GUI de methode GUI aangepast naar GUImaker" />
     <MESSAGE value="Databasemaker verwijdert en ergens anders toegevoegd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Databasemaker verwijdert en ergens anders toegevoegd" />
+    <MESSAGE value="het werkt :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="het werkt :)" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="591" y="290" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1616752460629">
+      <screen x="72" y="29" width="1848" height="1051" />
+    </state>
+    <state x="591" y="290" width="800" height="535" key="Vcs.Push.Dialog.v2/72.29.1848.1051@72.29.1848.1051" timestamp="1616752460629" />
   </component>
 </project>

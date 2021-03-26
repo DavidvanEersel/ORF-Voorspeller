@@ -15,6 +15,7 @@ import java.util.ArrayList;
  * @function zorgt ervoor dat er een communicatie is met de database.
  * @bugs bestanden hebben niet altijd de rechten of iets te mogen uit te voeren. Op dat moment treedt er een exceptie op
  */
+
 public class Databasehandler {
     static String pSeq;
 
@@ -33,6 +34,7 @@ public class Databasehandler {
             String oStop = orf.getStopPositie() + " ";
             int oReadingFrame = orf.getReadingFrame();
             try {
+                // Voer hier het path in naar het bestand setResults.sh.
                 String cmd = "/home/daaf/IdeaProjects/ORF-Voorspeller/classes/src/Database/setResults.sh "
                         + pHeader + pSeq + seqORF + oStart + oStop + oReadingFrame;
                 Process process = Runtime.getRuntime().exec(cmd);
@@ -48,6 +50,7 @@ public class Databasehandler {
         }
     }
 
+
     /**
      * Deze methode haalt de resultaten uit de database
      *
@@ -58,6 +61,7 @@ public class Databasehandler {
         pSeq = seq;
         ArrayList<String> results = new ArrayList<>();
         try {
+            // Voer hier het path in naar het bestand getResults.sh.
             String cmd = "/home/daaf/IdeaProjects/ORF-Voorspeller/classes/src/Database/getResults.sh " + pSeq;
             Process process = Runtime.getRuntime().exec(cmd);
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
@@ -72,6 +76,7 @@ public class Databasehandler {
         return results;
     }
 
+
     /**
      * Deze methode check of de sequentie al in de database zit
      *
@@ -82,6 +87,7 @@ public class Databasehandler {
         String temp = "";
         pSeq = sequentie;
         try {
+            // Voer hier het path in naar het bestand checkInDatabase.sh
             String cmd = "/home/daaf/IdeaProjects/ORF-Voorspeller/classes/src/Database/checkInDatabase.sh " + pSeq;
             Process process = Runtime.getRuntime().exec(cmd);
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
@@ -95,6 +101,5 @@ public class Databasehandler {
             e.printStackTrace();
         }
         return (!temp.equals(""));
-
     }
 }

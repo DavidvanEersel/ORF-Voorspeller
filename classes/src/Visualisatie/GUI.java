@@ -35,7 +35,7 @@ public class GUI extends JFrame implements ActionListener {
 
 
     /**
-     * Deze methode maakt de GUImaker.
+     * Deze methode maakt de GUI aan.
      */
     public void GUImaker() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -76,7 +76,7 @@ public class GUI extends JFrame implements ActionListener {
      * Deze methode leest het bestand met sequenties in fasta format in en maakt hier een sequentie object van.
      */
     public void readFile() {
-        // Lees het bestand in
+        // Lees het bestand in.
         StringBuilder inhoud = new StringBuilder();
         try (Scanner sc = new Scanner(new File(nameField.getText()))) {
             while (sc.hasNextLine()) {
@@ -90,7 +90,7 @@ public class GUI extends JFrame implements ActionListener {
                 }
             }
 
-            // Maak de sequentie objecten
+            // Maak de sequentie objecten.
             String[] lines = inhoud.toString().split("seq_header_seperator");
             ArrayList<String> lines2 = new ArrayList<>(Arrays.asList(lines));
             for (String line : lines) {
@@ -105,17 +105,18 @@ public class GUI extends JFrame implements ActionListener {
 
 
     /**
-     * Deze methode leest de sequentie opgegeven in het invulveld en maakt hier een sequentie object van.
+     * Deze methode leest de sequentie opgegeven in het invulveld in en maakt hier een sequentie object van.
      */
     public void readTekstveld() {
+        // Voeg een header toe met de datum en tijd.
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd_HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
-
         new Sequentie(invulveld.getText(), ">" + dtf.format(now));
     }
 
 
     public static void OrfVisualisatie(String seq) {
+        // Visualiseer de opmaak van de ORF visualisatie.
         Graphics tekenveld = visualisatie_orf.getGraphics();
         tekenveld.setColor(Color.white);
         tekenveld.fillRect(0, 0, 500, 200);
@@ -126,6 +127,7 @@ public class GUI extends JFrame implements ActionListener {
         tekenveld.drawString("rf 3", 20, 47);
         int readframe = 20;
 
+        // Visualiseer de balk van de sequentie.
         int seq_lengt = seq.length();
         tekenveld.setColor(Color.blue);
         tekenveld.fillRect(50, 10, 400, 10);
@@ -134,11 +136,10 @@ public class GUI extends JFrame implements ActionListener {
         tekenveld.drawString(String.valueOf(seq_lengt), 430, 20);
 
         ArrayList<String> results = Databasehandler.getResults(seq);
-        System.out.println(results + "Results");
 
+        // Visualiseer de balken met de lengte van de ORF's.
         for (String data : results) {
             String[] info_lijst = data.split("\\|");
-            System.out.println(Arrays.toString(info_lijst) + "info_lijst");
             int pos = Integer.parseInt(info_lijst[2]);
             if (pos != 0) {
                 pos = (pos * 400 / seq_lengt) + 50;
@@ -181,10 +182,12 @@ public class GUI extends JFrame implements ActionListener {
         try {
             File selectedFile;
             int reply;
+            // Als er op de bladerknop wordt geklikt.
             if (event.getSource() == BladerKnop) {
+                // Als er geselecteerd is om een sequentie in te voeren in het tekstvak.
                 if (kiestekst.isSelected()) {
-                    BladerKnop.setText("Verwerk");
                     readTekstveld();
+                    // Als er geselecteerd is om een fasta bestand op te geven.
                 } else if (kiesbestand.isSelected()) {
                     JFileChooser fileChooser = new JFileChooser();
                     reply = fileChooser.showOpenDialog(this);
@@ -194,7 +197,6 @@ public class GUI extends JFrame implements ActionListener {
                         readFile();
                     }
                 }
-
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -216,6 +218,5 @@ public class GUI extends JFrame implements ActionListener {
         frame.setSize(600, 400); // zet de grootte van het frame
         frame.GUImaker();
         frame.setVisible(true); // geeft de GUImaker weer
-
     }
 }
